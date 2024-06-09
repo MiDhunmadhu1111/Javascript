@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="filmticket.js"></script>
+</head>
+<body class="flex flex-col items-center mt-12 font-sans w-[30%] ml-[30%]">
+    <div class="container bg-gray-100 p-5 rounded-lg shadow-lg">
+        <div class="form-group mb-4">
+            <label for="name" class="block mb-2">Name:</label>
+            <input type="text" id="name" class="w-full p-2 box-border">
+        </div>
+        <div class=" mb-4">
+            <label for="film" class="block mb-2">Film:</label>
+            <input type="text" id="film" class="w-full p-2 box-border">
+        </div>
+        <div class="mb-4">
+            <label for="tickets" class="block mb-2">Number of Tickets:</label>
+            <input type="number" id="tickets" class="w-full p-2 box-border">
+        </div>
+        <button id="submit" class=" bg-blue-500 text-white rounded hover:bg-blue-400 w-[200px] ml-[20%] h-[30px] text-white" onclick="submit()">Book Tickets
+        </button>
+    </div>
+    <div id="ticket" class="w-full h-10 border border-1 border-red pt-2 bg-[lightgray] text-[blue] flex flex-col items-center mt-5 "></div>
+    <div id="print" class="w-[200px] h-10 border border-1 border-red pt-2 bg-[blue] text-[white] flex flex-col items-center mt-5 ">Print Ticket</div>
+</body>
+</html>
